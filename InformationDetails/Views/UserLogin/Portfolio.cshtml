@@ -1,0 +1,1007 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from joker-themes.com/personia-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2020 10:46:50 GMT -->
+<head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+    <meta name="author" content="AUTHOR NAME">
+    <!-- TITLE -->
+    <title>Personia - Personal Resume / CV / Portfolio HTML Template </title>
+    <!-- FAVICON -->
+
+    <link href="~/Portfolio/img/favicon/favicon.ico" rel="icon">
+
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Portfolio/img/favicon/apple-touch-icon-144x144.html">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Portfolio/img/favicon/apple-touch-icon-114x114.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Portfolio/img/favicon/apple-touch-icon-72x72.html">
+    <link rel="apple-touch-icon" href="~/Portfolio/img/favicon/apple-touch-icon.html">
+    <!-- BOOTSTRAP CSS -->
+
+    <link rel="stylesheet" href="~/Portfolio/css/bootstrap/bootstrap.min.css">
+    <!-- MAGNIFIC POPUP CORE CSS -->
+    <link href="css/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- FONT-AWESOME CSS -->
+    <link rel="stylesheet" href="~/Portfolio/css/font-awesome/css/font-awesome.min.css">
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="~/Portfolio/css/style.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="~/Portfolio/css/responsive.css">
+    <!-- CUSTOM COLORS -->
+    <link rel="stylesheet" href="~/Portfolio/css/colors/main-color.css">
+    <!--
+    <link rel="stylesheet" href="css/colors/main-color.css">
+    <link rel="stylesheet" href="css/colors/color-2.css">
+    <link rel="stylesheet" href="css/colors/color-3.css">
+    <link rel="stylesheet" href="css/colors/color-4.css">
+    <link rel="stylesheet" href="css/colors/color-5.css">
+    <link rel="stylesheet" href="css/colors/color-6.css">
+    -->
+</head>
+<body data-spy="scroll" data-target="#navbar">
+    <!-- =========    START LOADING    ======== -->
+    <div class="loading">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!-- =========    END LOADING    ======== -->
+    <!-- COLOR SWITCHE -->
+    <div class="option-box">
+        <div class="color-option">
+            <span id="t-title">Colors :</span>
+            <div class="list-unstyled">
+                <ul class="colors">
+                    <li data-value="~/Portfolio/css/colors/main-color.css" id="maincolor"></li>
+                    <li data-value="~/Portfolio/css/colors/color-2.css" id="color2"></li>
+                    <li data-value="~/Portfolio/css/colors/color-3.css" id="color3"></li>
+                    <li data-value="~/Portfolio/css/colors/color-4.css" id="color4"></li>
+                    <li data-value="~/Portfolio/css/colors/color-5.css" id="color5"></li>
+                    <li data-value="~/Portfolio/css/colors/color-6.css" id="color6"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gear-check">
+            <i class="fa fa-cog fa-spin fa-fw"></i>
+        </div>
+    </div>
+    <!-- =========    COLLECT THE NAV LINKS AND OTHER CONTENT FOR TOGGLING    ======== -->
+    <div class="slide-nav-btn" style="right: 2%;background: rgba(255, 255, 255, 0.05);">
+        <span></span>
+    </div>
+
+    <!-- =========    SIDEBAR START    ======== -->
+    <div class="sidebar slide-nav col-md-2">
+        <!-- Sidebar Avatar -->
+        <div class="avatar">
+            <img src="~/Portfolio/img/avatar.jpg" alt="avatar" />
+        </div>
+        <!-- Content sidebar -->
+        <div class="content-sidebar">
+            <!-- Sidebar Name -->
+            <div class="sidebar-name">
+                <h3>@Session["Name"]</h3>
+                <p>Software developer</p>
+            </div>
+            <!-- Sidebar Menu -->
+            <div class="menu navbar-sp">
+                <nav>
+                    <ul id="navbar">
+                        <li class="active">
+                            <a href="#home" data-scroll-nav="0" class="active">
+                                <i class="fa fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" data-scroll-nav="1">
+                                <i class="fa fa-user-o"></i> About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" data-scroll-nav="2">
+                                <i class="fa fa-tasks"></i> Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#resume" data-scroll-nav="3">
+                                <i class="fa fa-gears"></i> Resume
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" data-scroll-nav="4">
+                                <i class="fa fa-suitcase"></i> Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog" data-scroll-nav="5">
+                                <i class="fa fa-comments-o"></i> Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" data-scroll-nav="6">
+                                <i class="fa fa-envelope-o"></i> Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                @Html.ActionLink("Logout", "Logout", "UserLogin")
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- =========    SIDEBAR END    ======== -->
+    <!-- =========    RIGHT AREA START    ======== -->
+    <div class="right-area col-md-10">
+        <!-- =========    HEADER    ======== -->
+        <section class="header" id="home" data-scroll-index="0">
+            <!-- Header Content -->
+            <div class="header-overlay">
+                <div class="middle-c">
+                    <div class="middle-l text-center">
+                        <div class="m-content">
+                            <h5>Hi! I'm</h5>
+                            <h1>@Session["Name"]</h1>
+                            <h3>I am a software developer <span></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Content -->
+        </section>
+        <!-- =========    END HEADER    ======== -->
+        <!-- =========    ABOUT ME SECTION    ======== -->
+        <section class="about-me sect-spac" id="about" data-scroll-index="1">
+            <div class="sect-container">
+                <div class="s-title">
+                    <h3>About @Session["Name"]</h3>
+                    <div class="separator align-center">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- START ABOUT TEXT AREA -->
+                <div class="about-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining standard.the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                </div>
+                <!-- / END ABOUT TEXT AREA -->
+                <!-- START ABOUT INFO AREA -->
+                <div class="about-info col-md-4">
+                    <ul class="info-list">
+                        <li><span class="title">Name :</span><span class="value">@Session["Name"]</span></li>
+                        <li><span class="title">Age :</span><span class="value">@Session["Age"]</span></li>
+                        <li><span class="title">Residence :</span><span class="value">@Session["Residence"]</span></li>
+                        <li><span class="title">Address :</span><span class="value">@Session["Address"]</span></li>
+                        <li><span class="title">e-mail :</span><span class="value"><a href="mailto:email@example.com">@Session["Email"]</a></span></li>
+                        <li><span class="title">Phone :</span><span class="value">@Session["MobileNumber"]</span></li>
+
+                        <li><span class="title">Freelance :</span><span class="value available">Available</span></li>
+                    </ul>
+
+                </div>
+                <!-- / END ABOUT INFO AREA -->
+                <!-- START ABOUT SKILLS AREA -->
+                <div class="about-skills col-md-8">
+                    <ul>
+                        <li>
+                            <span>C#</span>
+                            <div class="progress">
+                                <div class="progress-bar" data-percent="95" style="width: 95%;">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>MVC</span>
+                            <div class="progress">
+                                <div class="progress-bar" data-percent="90" style="width: 90%;">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>ASP.NET</span>
+                            <div class="progress">
+                                <div class="progress-bar" data-percent="65" style="width: 65%;">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>SQL</span>
+                            <div class="progress">
+                                <div class="progress-bar" data-percent="50" style="width: 50%;">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>JAVASCRIPT</span>
+                            <div class="progress">
+                                <div class="progress-bar" data-percent="60" style="width: 60%;">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / END ABOUT SKILLS AREA -->
+                <div class="clear"></div>
+            </div>
+        </section>
+        <!-- =========    END ABOUT ME SECTION    ======== -->
+        <!-- =========    FACTS SECTION    ======== -->
+        <section class="facts sect-spac">
+            <div class="sect-container">
+                <!-- Fact Number One -->
+                <div class="fact-box col-xs-12 col-sm-3">
+                    <h3>
+                        <span class="count" data-from="0" data-to="90">0</span>
+                    </h3>
+                    <h4>Projects Done</h4>
+                </div>
+                <!-- Fact Number Two -->
+                <div class="fact-box col-xs-12 col-sm-3">
+                    <h3>
+                        <span class="count" data-from="0" data-to="30">0</span>
+                    </h3>
+                    <h4>CUPS OF COFFEE</h4>
+                </div>
+                <!-- Fact Number Three -->
+                <div class="fact-box col-xs-12 col-sm-3">
+                    <h3>
+                        <span class="count" data-from="0" data-to="500">0</span>
+                    </h3>
+                    <h4>HAPPY CLIENTS</h4>
+                </div>
+                <!-- Fact Number Four -->
+                <div class="fact-box col-xs-12 col-sm-3">
+                    <h3>
+                        <span class="count" data-from="0" data-to="77">0</span>
+                    </h3>
+                    <h4>GIVING SUPPORT</h4>
+                </div>
+            </div>
+        </section>
+        <!-- =========    END FACTS SECTION    ======== -->
+        <!-- =========    SERVICES SECTION    ======== -->
+        <section class="services sect-spac text-center" id="services" data-scroll-index="2">
+            <div class="sect-container">
+                <div class="s-title">
+                    <h3>SERVICES</h3>
+                    <div class="separator align-center">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- FIRST SERVICE -->
+                <div class="service-item col-md-6">
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-paint-brush"></i>
+                        </div>
+                        <div class="service-title">
+                            <h4>Web Design</h4>
+                        </div>
+                        <div class="service-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SECOND SERVICE -->
+                <div class="service-item col-md-6">
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-wordpress"></i>
+                        </div>
+                        <div class="service-title">
+                            <h4>Wordpress Themes</h4>
+                        </div>
+                        <div class="service-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- THIRD SERVICE -->
+                <div class="service-item col-md-6">
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="service-title">
+                            <h4>Web Development</h4>
+                        </div>
+                        <div class="service-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOURTH SERVICE -->
+                <div class="service-item col-md-6">
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <div class="service-title">
+                            <h4>Graphic Design</h4>
+                        </div>
+                        <div class="service-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========    END SERVICES SECTION    ======== -->
+        <!-- =========    RESUME SECTION    ======== -->
+        <section class="resume sect-spac text-center" id="resume" data-scroll-index="3">
+            <div class="sect-container">
+                <div class="s-title">
+                    <h3>RESUME</h3>
+                    <div class="separator align-center">
+                        <span></span>
+                    </div>
+                </div>
+
+                <!-- RESUME CONTENT -->
+                <div class="resume-c">
+                    <div class="page-content">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="block">
+                                    <div class="block-title">
+                                        <h3><i class="fa fa-graduation-cap"></i> Education</h3>
+                                    </div>
+                                    <div class="timeline">
+                                        <!-- Education 1 -->
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">Computer Science</h4>
+                                            <span class="item-period">2017</span>
+                                            <span class="item-small">M.V.I.E.T(U.P.TU)</span>
+                                            <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+                                        </div>
+                                        <!-- / Education 1 -->
+                                        <!-- Education 2 -->
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">Master Degree Of Design</h4>
+                                            <span class="item-period">2010</span>
+                                            <span class="item-small">University of Studies</span>
+                                            <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+                                        </div>
+                                        <!-- / Education 2 -->
+                                        <!-- Education 3 -->
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">Graphic Design School</h4>
+                                            <span class="item-period">2010</span>
+                                            <span class="item-small">University of Studies</span>
+                                            <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+                                        </div>
+                                        <!-- / Education 3 -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience col-sm-12 col-md-6 col-lg-6">
+                                <div class="block">
+                                    <div class="block-title">
+                                        <h3><i class="fa fa-bookmark"></i> Experience</h3>
+                                    </div>
+                                    <div class="timeline">
+                                        <!-- Experience 1 -->
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">Frontend-developer</h4>
+                                            <span class="item-period">Dec 2012 - Current</span>
+                                            <span class="item-small">Glory creative Studio</span>
+                                            <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+                                        </div>
+                                        <!-- / Experience 1 -->
+                                        <!-- Experience 2 -->
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">Creative Designer</h4>
+                                            <span class="item-period">Dec 2011 - Nov 2012</span>
+                                            <span class="item-small">Sharper Creative studio</span>
+                                            <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+                                        </div>
+                                        <!-- / Experience 2 -->
+                                        <!-- Experience 3 -->
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">UI & UX Designer</h4>
+                                            <span class="item-period">Jan 2010 - Dec 2011</span>
+                                            <span class="item-small">Google inc Ltd</span>
+                                            <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+                                        </div>
+                                        <!-- / Experience 3 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END RESUME CONTENT -->
+
+            </div>
+        </section>
+        <!-- =========    END RESUME SECTION    ======== -->
+        <!-- =========    DOWNLOAD SECTION    ======== -->
+        <section class="download sect-spac">
+            <div class="sect-container">
+                <!-- DOWNLOAD LEFT TEXT -->
+                <div class="download-text col-md-9 col-xs-12">
+                    <h4>Download My Resume</h4>
+                    <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</span>
+                </div>
+                <!-- DOWNLOAD RIGHT BUTTON -->
+                @*<div class="download-button col-md-3 col-xs-12">
+                    <a @Html.ActionLink("Download", "DownloadResume", "ApplyForJob")><i class="fa fa-download"></i> Download</a>
+                </div>*@
+                <div class="download-button col-md-3 col-xs-12">
+                       @ViewBag.Msg
+                    <a @Html.ActionLink("Download", "DownloadResume", "ApplyForJob")><i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- =========    DOWNLOAD SECTION    ======== -->
+        <!-- =========    PORTFOLIO SECTION    ======== -->
+        <section class="portfolio sect-spac text-center" id="portfolio" data-scroll-index="4">
+            <div class="sect-container">
+                <div class="s-title">
+                    <h3>PORTFOLIO</h3>
+                    <div class="separator align-center">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- PORTFOLIO FILTER BUTTONS -->
+                <div class="button-group filter-portfolio">
+                    <a class="button is-checked" data-filter="*">all</a>
+                    <a class="button " data-filter=".item-photoshop">Photoshop</a>
+                    <a class="button" data-filter=".item-design">Design</a>
+                    <a class="button" data-filter=".item-photo">Photo</a>
+                    <a class="button" data-filter=".item-video">Video</a>
+                </div>
+                <!-- END PORTFOLIO FILTER BUTTONS -->
+                <!-- PORTFOLIO -->
+                <div class="portfolio-content">
+
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-photo">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-1">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/1.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Photo</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-1" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/1.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-photo">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-2">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/2.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Photo</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-2" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/2.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-design">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-3">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/3.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-3" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/3.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-video">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-4">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/4.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Video</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-4" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/4.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-photoshop">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-5">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/5.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Photoshop</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-5" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/5.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-design">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-6">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/6.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-6" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/6.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-design">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-7">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/7.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Design</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-7" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/7.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO ITEM -->
+                    <div class="portfolio-item item-photoshop">
+                        <div class="portfolio-caption">
+                            <a class="modal-image" href="#modal-image-8">
+
+                                <!-- PORTFOLIO IMAGE -->
+                                <img src="~/Portfolio/img/8.jpg" alt="Image Title" />
+                                <!-- PORTFOLIO TITLE -->
+                                <div class="overlay">
+                                    <div class="info-content">
+                                        <h4>Project Title</h4>
+                                        <span>Photoshop</span>
+                                    </div>
+                                </div>
+                                <!-- POPUP WHITE BOX -->
+                                <div id="modal-image-8" class="white-popup mfp-hide">
+                                    <!-- POPUP WHITE BOX IMAGE -->
+                                    <img src="~/Portfolio/img/8.jpg" alt="Image Title" />
+                                    <div>
+                                        <!-- POPUP WHITE BOX TITLE -->
+                                        <h3>PROJECT TITLE</h3>
+                                        <!-- POPUP WHITE BOX DESCRIPTION -->
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                    </div>
+                                </div>
+                                <!-- END POPUP WHITE BOX -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PORTFOLIO -->
+            </div>
+        </section>
+        <!-- =========    END PORTFOLIO SECTION    ======== -->
+        <!-- =========    TESTIMONIALS SECTION    ======== -->
+        <section class="testimonials sect-spac text-center">
+            <div class="sect-container">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+
+                        <!-- CLIENT ITEM -->
+                        <div class="item active">
+                            <div class="testimonial-box col-md-8 col-xs-10">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <!-- TESTIMONIAL NAME -->
+                                <h3>Jessi Walsh<span>Manager @*@Company*@</span></h3>
+                            </div>
+                        </div>
+                        <!-- CLIENT ITEM -->
+                        <div class="item">
+                            <div class="testimonial-box col-md-8 col-xs-10">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
+                                <!-- TESTIMONIAL NAME -->
+                                <h3>Frank Rouse<span>Designer @*Company*@</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- Next And Previous buttons -->
+                        <div class="prev-next col-md-12">
+                            <a href="#carousel" role="button" data-slide="prev">
+                                <span>
+                                    <i class="fa fa-long-arrow-left"></i>
+                                </span>
+                            </a>
+                            <a href="#carousel" role="button" data-slide="next">
+                                <span>
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========    END TESTIMONIALS SECTION    ======== -->
+        <!-- =========    LATEST POSTS SECTION    ======== -->
+        <section class="posts sect-spac text-center">
+            <div class="sect-container">
+
+                <div class="s-title">
+                    <h3>LATEST POSTS</h3>
+                    <div class="separator align-center">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- BLOG / ARTICLE -->
+                <div class="post-item col-md-6">
+                    <div class="p-item">
+                        <a href="#">
+                            <div class="p-picture">
+                                <!-- post image -->
+                                <img src="http://via.placeholder.com/360x240" alt="Image-Title" />
+                                <div class="overlay">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-content">
+                            <a href="#">
+                                <h3>Original and Innovative Web Layouts</h3>
+                            </a>
+                            <div class="post-meta">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-user-o"></i>
+                                        <a href="#">
+                                            <span>Admin</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-calendar-o"></i>
+                                        <a href="#">
+                                            <span>8 June, 2017</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-commenting-o"></i>
+                                        <a href="#">
+                                            <span>11 Comment</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Post Text -->
+                            <p>It is a paradisematic country. the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to ...</p>
+                            <a href="#" class="more">Read More <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- BLOG / ARTICLE -->
+                <div class="post-item col-md-6" id="blog" data-scroll-index="5">
+                    <div class="p-item">
+                        <a href="#">
+                            <div class="p-picture">
+                                <!-- post image -->
+                                <img src="http://via.placeholder.com/360x240" alt="Image-Title" />
+                                <div class="overlay">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-content">
+                            <a href="#">
+                                <h3>Designed for Everyone, Everywhere</h3>
+                            </a>
+                            <div class="post-meta">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-user-o"></i>
+                                        <a href="#">
+                                            <span>Admin</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-calendar-o"></i>
+                                        <a href="#">
+                                            <span>6 June, 2017</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-commenting-o"></i>
+                                        <a href="#">
+                                            <span>2 Comment</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Post Text -->
+                            <p>It is a paradisematic country. the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to ...</p>
+                            <a href="#" class="more">Read More <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========    END LATEST POSTS SECTION    ======== -->
+        <!-- =========    CONTACT SECTION    ======== -->
+        <section class="contact sect-spac text-center" id="contact" data-scroll-index="6">
+            <div class="sect-container">
+                <div class="s-title">
+                    <h3>GET IN TOUCH</h3>
+                    <div class="separator align-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="contact-info col-md-10 col-sm-10 col-xs-12">
+                    <ul>
+                        <li class="col-md-4">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Los Angeles, USA</span>
+                        </li>
+                        <li class="col-md-4">
+                            <i class="fa fa-envelope-o"></i>
+                            <span>jonathondoe@gmail.com</span>
+                        </li>
+                        <li class="col-md-4">
+                            <i class="fa fa-phone"></i>
+                            <span>(0123) 456 789 000</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="contact-form col-md-10 col-sm-11 col-xs-12">
+                    @using (Html.BeginForm("UserContact", "Home", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+
+                    <form action="http://joker-themes.com/personia-demo/php/contact.php" method="POST" class="contact-forum">
+                        <div class="contact-item col-md-12">
+                            <input type="text" name="CustomerName" placeholder="CustomerName *" required="required">
+                        </div>
+                        <div class="contact-item col-md-12">
+                            <input type="text" name="Email" placeholder="Email *" required="required">
+                        </div>
+                        <div class="contact-item col-md-12">
+                            <input type="text" name="Phone" placeholder="Subject" required="required">
+                        </div>
+                        <div class="contact-item col-md-12">
+                            <input type="text" name="City" placeholder="City" required="required">
+                        </div>
+                        <div class="contact-item col-md-12">
+                            <textarea id="form_message" name="Message" placeholder="Message *" rows="4" required="required" data-error="Message."></textarea>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="contact-item col-sm-12">
+                            <input type="submit" class="button disabled" value="Send Message">
+                        </div>
+                    </form>
+                    }
+                    </div>
+            </div>
+        </section>
+        <!-- =========    END CONTACT SECTION    ======== -->
+        <!-- =========    FOOTER SECTION    ======== -->
+        <footer class="footer footer-sect text-center">
+            <div class="sect-container">
+                <!-- START SOCIAL MEDIA -->
+                <div class="social-n">
+                    <!-- FACEBOOK -->
+                    <a href="#facebook-account-url" target="_blank">
+                        <div class="s-icon facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </a>
+                    <!-- TWITTER -->
+                    <a href="#twitter-account-url" target="_blank">
+                        <div class="s-icon twitter">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </a>
+                    <!-- GOOGLE PLUS -->
+                    <a href="#google-plus-account-url" target="_blank">
+                        <div class="s-icon google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </div>
+                    </a>
+                    <!-- LINKEDIN -->
+                    <a href="#linkedin-account-url" target="_blank">
+                        <div class="s-icon snapchat-ghost">
+                            <i class="fa fa-snapchat-ghost"></i>
+                        </div>
+                    </a>
+                    <!-- PENETIRES -->
+                    <a href="#penetires-account-url" target="_blank">
+                        <div class="s-icon soundcloud">
+                            <i class="fa fa-soundcloud"></i>
+                        </div>
+                    </a>
+                    <!-- YOUTUBE -->
+                    <a href="#youtube-account-url" target="_blank">
+                        <div class="s-icon youtube">
+                            <i class="fa fa-youtube"></i>
+                        </div>
+                    </a>
+                    <!-- INSTAGRAM -->
+                    <a href="#instagram-account-url" target="_blank">
+                        <div class="s-icon instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- END SOCIAL MEDIA -->
+
+                <div class="f-co">
+                    @*<p>CopyRight © By <a href="#">joker-themes</a> 2017</p>*@
+                </div>
+
+            </div>
+        </footer>
+        <!-- =========    END FOOTER SECTION    ======== -->
+    </div>
+    <!-- =========    RIGHT END    ======== -->
+    <!-- ====== JS ======  -->
+    <!-- JQUERY -->
+
+    <script src="~/Portfolio/js/jquery.v1.12.4.js"></script>
+    <script type="text/javascript" src="~/Portfolio/js/jquery.v1.12.4.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="~/Portfolio/js/bootstrap.min.js"></script>
+    <!-- TYPED JS -->
+
+    <script src="~/Portfolio/js/typed.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="~/Portfolio/js/jquery.magnific-popup.min.js"></script>
+    <!-- COUNT TO JS -->
+    <script src="~/Portfolio/js/jquery.countTo.js"></script>
+    <!-- ISOTOPE JS -->
+    <script src="~/Portfolio/js/jquery.countTo.js"></script>
+    <script src="~/Portfolio/js/isotope.pkgd.min.js"></script>
+    <!-- MASONRY JS -->
+    <script src="~/Portfolio/js/masonry.pkgd.min.js"></script>
+    <!-- PARSLEY file -->
+    <script src="~/Portfolio/js/parsley.js"></script>
+    <script src="~/Portfolio/js/scrollIt.min.js"></script>
+    <!-- SCROLLIT file -->
+    <script src="~/Portfolio/js/scrollIt.min.js"></script>
+    <!-- custom js -->
+    <script src="~/Portfolio/js/parsley.js"></script>
+    <script src="~/Portfolio/js/main.js"></script>
+</body>
+<!-- Mirrored from joker-themes.com/personia-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Feb 2020 10:47:18 GMT -->
+</html>
